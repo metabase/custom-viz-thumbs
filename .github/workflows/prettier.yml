@@ -1,0 +1,19 @@
+name: Prettier
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run prettier
+      - run: git diff --exit-code

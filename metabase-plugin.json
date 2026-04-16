@@ -1,0 +1,7 @@
+{
+  "name": "Thumbs",
+  "icon": "thumbs.svg",
+  "metabase": {
+    "version": ">=59"
+  }
+}

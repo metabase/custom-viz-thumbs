@@ -1,0 +1,24 @@
+{
+  "name": "@metabase/custom-viz-thumbs",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch & vite preview",
+    "prettier": "prettier --write .",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@metabase/custom-viz": "^0.0.1-alpha.14",
+    "@types/react": "^19.2.14",
+    "prettier": "^3.8.3",
+    "react": "^19.2.5",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.8"
+  }
+}
