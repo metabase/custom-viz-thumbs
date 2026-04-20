@@ -10,6 +10,8 @@ A simple custom visualization for Metabase. Renders thumbs up or down depending 
 
 Requires Metabase `>= 59`.
 
+![thumbs](./assets/thumbs.webp)
+
 ## Data requirements
 
 The query must return a single numerical value (1 row and 1 column).
