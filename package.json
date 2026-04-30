@@ -8,7 +8,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && node pack.mjs",
     "dev": "vite build --watch & vite preview",
     "prettier": "prettier --write .",
     "type-check": "tsc --noEmit"
@@ -16,8 +16,10 @@
   "devDependencies": {
     "@metabase/custom-viz": "^0.0.1-alpha.14",
     "@types/react": "^19.2.14",
+    "@types/tar-stream": "^3.1.4",
     "prettier": "^3.8.3",
     "react": "^19.2.5",
+    "tar-stream": "^3.1.8",
     "typescript": "^6.0.2",
     "vite": "^8.0.8"
   }
