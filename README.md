@@ -8,7 +8,7 @@
 
 A simple custom visualization for Metabase. Renders thumbs up or down depending on whether the value meets the threshold.
 
-Requires Metabase `>= 59`.
+Requires Metabase `>= 62`.
 
 ![thumbs](./assets/thumbs.webp)
 
