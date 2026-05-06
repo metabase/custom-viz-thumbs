@@ -1,5 +1,4 @@
 import type { CreateCustomVisualization } from "@metabase/custom-viz";
-import { StaticVisualizationComponent } from "./StaticVisualization";
 import { VisualizationComponent } from "./Visualization";
 
 type Settings = {
@@ -60,7 +59,6 @@ const createVisualization: CreateCustomVisualization<Settings> = ({
       }),
     },
     VisualizationComponent,
-    StaticVisualizationComponent,
   };
 };
 
