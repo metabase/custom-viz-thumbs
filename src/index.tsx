@@ -1,4 +1,5 @@
 import type { CreateCustomVisualization } from "@metabase/custom-viz";
+import { defineConfig } from "@metabase/custom-viz";
 import { VisualizationComponent } from "./Visualization";
 
 type Settings = {
@@ -8,7 +9,7 @@ type Settings = {
 const createVisualization: CreateCustomVisualization<Settings> = ({
   defineSetting,
 }) => {
-  return {
+  return defineConfig<Settings>({
     id: "thumbs",
     getName: () => "Thumbs",
     minSize: { width: 2, height: 2 },
@@ -59,7 +60,7 @@ const createVisualization: CreateCustomVisualization<Settings> = ({
       }),
     },
     VisualizationComponent,
-  };
+  });
 };
 
 export default createVisualization;
