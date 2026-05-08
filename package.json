@@ -24,7 +24,7 @@
     "vite": "^8.0.8"
   },
   "dependencies": {
-    "@metabase/custom-viz": "^0.0.1-canary.18",
+    "@metabase/custom-viz": "^1.0.0",
     "react": "18.2",
     "react-dom": "18.2"
   }
