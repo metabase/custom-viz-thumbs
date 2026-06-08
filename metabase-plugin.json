@@ -2,6 +2,6 @@
   "name": "Thumbs",
   "icon": "thumbs.svg",
   "metabase": {
-    "version": ">=62"
+    "version": ">=1.60.0"
   }
 }
