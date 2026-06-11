@@ -1,6 +1,6 @@
 {
   "name": "@metabase/custom-viz-thumbs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "license": "MIT",
   "type": "module",
@@ -24,7 +24,7 @@
     "vite": "^8.0.8"
   },
   "dependencies": {
-    "@metabase/custom-viz": "^1.0.3",
+    "@metabase/custom-viz": "^1.0.4",
     "react": "18.2",
     "react-dom": "18.2"
   }
