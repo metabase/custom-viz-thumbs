@@ -1,6 +1,7 @@
 import type { CreateCustomVisualization } from "@metabase/custom-viz";
 import { defineConfig } from "@metabase/custom-viz";
 import { VisualizationComponent } from "./Visualization";
+import { StaticVisualizationComponent } from "./StaticVisualization";
 
 type Settings = {
   threshold?: number;
@@ -60,6 +61,7 @@ const createVisualization: CreateCustomVisualization<Settings> = ({
       }),
     },
     VisualizationComponent,
+    StaticVisualizationComponent,
   });
 };
 
