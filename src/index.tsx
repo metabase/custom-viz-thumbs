@@ -1,10 +1,7 @@
 import type { CreateCustomVisualization } from "@metabase/custom-viz";
 import { defineConfig } from "@metabase/custom-viz";
 import { VisualizationComponent } from "./Visualization";
-
-type Settings = {
-  threshold?: number;
-};
+import { Settings } from "./types";
 
 const createVisualization: CreateCustomVisualization<Settings> = ({
   defineSetting,
