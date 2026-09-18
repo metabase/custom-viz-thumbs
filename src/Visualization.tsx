@@ -5,7 +5,7 @@ import { Settings } from "./types";
 export const VisualizationComponent = (
   props: CustomVisualizationProps<Settings>,
 ) => {
-  const { height, series, settings, width } = props;
+  const { height, renderingContext, series, settings, width } = props;
   const { threshold } = settings;
   const value = series[0].data.rows[0][0];
 
@@ -27,7 +27,7 @@ export const VisualizationComponent = (
       }}
     >
       <ThumbsIcon
-        color="var(--mb-color-brand)"
+        color={renderingContext.getColor("core-brand")}
         height={Math.min(height * 0.8, 256)}
         isDown={value < threshold}
       />

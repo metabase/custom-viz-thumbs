@@ -1,6 +1,6 @@
 {
   "name": "@metabase/custom-viz-thumbs",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "private": true,
   "license": "MIT",
   "type": "module",
@@ -8,23 +8,21 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "vite build && node pack.mjs",
+    "build": "vite build && metabase-custom-viz pack",
     "dev": "vite build --watch & vite preview",
     "prettier": "prettier --write .",
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
+    "@metabase/custom-viz": "2.0.0-canary.1",
     "@types/react": "18.2",
     "@types/react-dom": "18.2",
-    "@types/tar-stream": "^3.1.4",
     "@vitejs/plugin-react": "5.2",
     "prettier": "^3.8.3",
-    "tar-stream": "^3.1.8",
     "typescript": "^6.0.2",
     "vite": "^8.0.8"
   },
   "dependencies": {
-    "@metabase/custom-viz": "^1.0.4",
     "react": "18.2",
     "react-dom": "18.2"
   }

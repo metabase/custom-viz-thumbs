@@ -8,7 +8,7 @@
 
 A simple custom visualization for Metabase. Renders thumbs up or down depending on whether the value meets the threshold.
 
-Requires Metabase `>= 62`.
+Requires Metabase `>= 64` (built with `@metabase/custom-viz` 2.0).
 
 ![thumbs](./assets/thumbs.webp)
 
@@ -32,7 +32,7 @@ npm run build       # compiles src/ → dist/, then packages it into a .tgz
 
 `npm run build` writes `<name>-<version>.tgz` to the project root. Upload that file in **Admin → Custom visualizations → Add** to register the plugin.
 
-> The packaged archive contains `metabase-plugin.json` plus the build output (`dist/index.js` and any whitelisted `dist/assets/*`).
+> Packaging is done by the `metabase-custom-viz pack` command from the SDK. The archive contains `metabase-plugin.json` (with the SDK version stamped in as `sdk.version`) plus the build output (`dist/index.js` and any whitelisted `dist/assets/*`).
 
 ## Other scripts
 
