@@ -14,7 +14,7 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@metabase/custom-viz": "2.0.0-canary.1",
+    "@metabase/custom-viz": "2.0.0",
     "@types/react": "18.2",
     "@types/react-dom": "18.2",
     "@vitejs/plugin-react": "5.2",
