@@ -7,8 +7,6 @@ const createVisualization: CreateCustomVisualization<Settings> = ({
   defineSetting,
 }) => {
   return defineConfig<Settings>({
-    id: "thumbs",
-    getName: () => "Thumbs",
     minSize: { width: 2, height: 2 },
     checkRenderable(series, settings) {
       if (series.length !== 1) {
